@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="todo.TaskManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-18T23:41:36.004Z" hostname="DESKTOP-CUSTOMP" time="0.016">
+<testsuite name="todo.TaskManagerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-19T21:10:15.773Z" hostname="DESKTOP-CUSTOMP" time="0.018">
   <properties/>
-  <testcase name="testGetTasks()" classname="todo.TaskManagerTest" time="0.012"/>
+  <testcase name="testGetTasks()" classname="todo.TaskManagerTest" time="0.013"/>
   <testcase name="testAddTask()" classname="todo.TaskManagerTest" time="0.001"/>
-  <testcase name="testRemoveTask()" classname="todo.TaskManagerTest" time="0.002"/>
+  <testcase name="testRemoveTask()" classname="todo.TaskManagerTest" time="0.003"/>
   <system-out><![CDATA[Task removed successfully.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

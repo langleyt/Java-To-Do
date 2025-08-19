@@ -20,7 +20,7 @@ public class TaskManagerTest {
         TaskManager manager = new TaskManager();
         Task task = new Task("Test Task");
         manager.addTask(task);
-        manager.removeTask(task);
+        manager.removeTask(0);
         assertFalse(manager.getTasks().contains(task));
         System.out.println("Task removed successfully.");
     }
