@@ -1,0 +1,11 @@
+php
+
+#Java
+*.class
+*.jar
+
+.vscode/
+
+.DS_Store
+
+tasks.json
