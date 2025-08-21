@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - TaskTest</title>
+<title>Test results - ConsoleUITest</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>TaskTest</h1>
+<h1>ConsoleUITest</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/todo.html">todo</a> &gt; TaskTest</div>
+<a href="../packages/todo.html">todo</a> &gt; ConsoleUITest</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.001s</div>
+<div class="counter">0.053s</div>
 <p>duration</p>
 </div>
 </td>
@@ -63,6 +63,9 @@
 <li>
 <a href="#">Tests</a>
 </li>
+<li>
+<a href="#">Standard output</a>
+</li>
 </ul>
 <div class="tab">
 <h2>Tests</h2>
@@ -75,16 +78,74 @@
 </tr>
 </thead>
 <tr>
-<td class="success">testTaskCompletion()</td>
-<td class="success">0s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">testTaskCreation()</td>
-<td class="success">0.001s</td>
+<td class="success">testViewTasks()</td>
+<td class="success">0.053s</td>
 <td class="success">passed</td>
 </tr>
 </table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+5. Exit
+Choose an option: 
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+5. Exit
+Choose an option: 
+Tasks:
+1.Feed Fred
+    - always gotta feed the fred day and night
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+5. Exit
+Choose an option: 
+Goodbye!
+Output log: 
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+5. Exit
+Choose an option: 
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+5. Exit
+Choose an option: 
+Tasks:
+1.Feed Fred
+    - always gotta feed the fred day and night
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+5. Exit
+Choose an option: 
+Goodbye!
+
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">

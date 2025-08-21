@@ -1,1 +1,60 @@
-Task removed successfully.
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+	5. Exit
+Choose an option: 
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+	5. Exit
+Choose an option: 
+Tasks:
+1.Feed Fred
+0    - always gotta feed the fred day and night
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+	5. Exit
+Choose an option: 
+
+Goodbye!
+Output log: 
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+	5. Exit
+Choose an option: 
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+	5. Exit
+Choose an option: 
+Tasks:
+1.Feed Fred
+0    - always gotta feed the fred day and night
+
+--- To-Do List ---
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Load Tasks
+	5. Exit
+Choose an option: 
+
+Goodbye!
+
+Task removed successfully.

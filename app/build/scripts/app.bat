@@ -70,11 +70,11 @@ goto fail
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\app-1.0.0.jar
+set CLASSPATH=%APP_HOME%\lib\app-1.0.0.jar;%APP_HOME%\lib\gson-2.10.1.jar
 
 
 @rem Execute app
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%"  %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %APP_OPTS%  -classpath "%CLASSPATH%" todo.ConsoleUI %*
 
 :end
 @rem End local scope for the variables with windows NT shell
