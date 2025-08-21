@@ -2,7 +2,6 @@ package todo;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import todo.Task;
 
 public class TaskTest {
     @Test

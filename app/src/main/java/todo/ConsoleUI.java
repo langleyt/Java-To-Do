@@ -1,20 +1,10 @@
 package todo;
 
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
 public class ConsoleUI {
     private IO io;
     private TaskManager taskManager;
     private boolean running;
-
-    private static final String TASKS_FILE = "src/main/java/resources/tasks.json";
-    private Gson gson = new Gson();
     
     /**
      * Constructor to create a Console User Interface for the to-do list application.
@@ -26,26 +16,6 @@ public class ConsoleUI {
         taskManager = new TaskManager();
         running = true;
     }
-
-
-    /**
-     * Loads tasks from a JSON file into the tasks list.
-     * If the file is not found or an error occurs, initializes an empty task list.
-     */
-    private void loadTasks() {
-        List<Task> tasks = new ArrayList<>();
-        try (FileReader reader = new FileReader(TASKS_FILE)) {
-            tasks = gson.fromJson(reader, new TypeToken<List<Task>>(){}.getType());
-            if (tasks == null) tasks = new ArrayList<>();
-        } catch (IOException e) {
-            System.out.println("Error loading tasks: " + e.getMessage());
-            tasks = new ArrayList<>();
-        }
-        for (Task task : tasks) {
-            taskManager.addTask(task);
-        }
-    }
-
 
     /**
      * Displays the list of current tasks to the console along with their descriptions.
@@ -112,8 +82,6 @@ public class ConsoleUI {
         } else if (decision.equals("3")) {
             removeTask();
         } else if (decision.equals("4")) {
-            loadTasks();
-        } else if (decision.equals("5")) {
             exit();
         }
     }
@@ -125,8 +93,7 @@ public class ConsoleUI {
         io.sendOutput("1. View Tasks");
         io.sendOutput("2. Add Task");
         io.sendOutput("3. Remove Task");
-        io.sendOutput("4. Load Tasks");
-        io.sendOutput("5. Exit");
+        io.sendOutput("4. Exit");
         io.sendOutput("Choose an option: ");
     }
 
@@ -141,7 +108,7 @@ public class ConsoleUI {
 
             try {
                 String decision = choice.strip();
-                if (Integer.parseInt(decision) < 1 || Integer.parseInt(decision) > 5) {
+                if (Integer.parseInt(decision) < 1 || Integer.parseInt(decision) > 4) {
                     io.sendOutput("Please choose a valid option.");
                     continue;
                 }

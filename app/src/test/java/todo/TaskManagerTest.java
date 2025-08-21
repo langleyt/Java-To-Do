@@ -13,6 +13,9 @@ public class TaskManagerTest {
 
     @AfterEach
     void tearDown() {
+        while (tm1.getTasks().size() > 0) {
+            tm1.removeTask(0);
+        }
         tm1 = new TaskManager();
     }
 
